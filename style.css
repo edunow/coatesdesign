@@ -1,0 +1,311 @@
+/*
+Theme Name: COATESDESIGN
+Theme URI: http://www.coatesdesign.com
+Template: responsive
+Author: Gerard Greenidge and Keira Dooley
+Author URI: http://www.edunow.com and http://www.designbydooley.com
+Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. Powerful but simple Theme Options for full CMS control with easy Logo Upload and Social Networking. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into over 45 languages. Cross-Browser compatible. Official support forum (http://cyberchimps.com/forum/free/responsive/). For Weekly Tips on how to get the most out of this theme, sign up here http://cyberchimps.com/weekly-tips-free-responsive-free-theme/
+Tags: white,black,gray,light,custom-menu,custom-header,custom-background,one-column,two-columns,left-sidebar,right-sidebar,theme-options,threaded-comments,full-width-template,sticky-post,translation-ready,rtl-language-support,responsive-layout,fluid-layout,featured-images
+Version: 1.1470726258
+Updated: 2016-08-09 07:04:18
+
+BETA.COATESDESIGN.COM
+*/
+
+body {
+	-moz-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	background: #ffffff;
+	color: #7F736E;
+	font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+	font-size: 1.375em;
+	-ms-filter: "progid:DXImageTransform.Microsoft.font-smoothing(antialiased)";
+	line-height: 1.5em;
+	-ms-filter: "progid:DXImageTransform.Microsoft.text-rendering(optimizeLegibility)";
+}
+.skip-container {
+	display: block;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+#container {
+	margin: 30px auto;
+	max-width: 100%;
+	padding: 0px;
+}
+#header {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 40px;
+}
+/* =Top Menu
+-------------------------------------------------------------- */
+.top-menu {
+	float: right;
+	margin: 10px 0;
+	padding: 0;
+}
+.top-menu li {
+	display: inline;
+	list-style-type: none;
+}
+.top-menu li a {
+	border-left: 1px solid #cccccc;
+	color: #7F736E;
+	font-size: 11px;
+	padding: 0 4px 0 8px;
+}
+.top-menu > li:first-child > a {
+	border-left: none;
+}
+.top-menu li a:hover {
+	color: #7F736E;
+}
+/* =Header Menu (Primary)
+-------------------------------------------------------------- */
+
+.main-nav {
+	clear: initial;
+	max-width: 645px;
+	float: right;
+}
+.menu {
+	background-color: #fff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+	background-image: -webkit-linear-gradient(top, #fff, #fff);
+	background-image: -moz-linear-gradient(top, #fff, #fff);
+	background-image: -ms-linear-gradient(top, #fff, #fff);
+	background-image: -o-linear-gradient(top, #fff, #fff);
+	background-image: linear-gradient(to top, #fff, #fff);
+	clear: both;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#fff, endColorstr=#fff)";
+	margin: 0 auto;
+}
+.menu, .menu ul {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.menu li {
+	border: 0;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 5;
+}
+.menu li:hover {
+	white-space: normal;
+	z-index: 10000;
+}
+.menu li li {
+	float: none;
+}
+.menu ul {
+	left: 0;
+	position: absolute;
+	top: 0;
+	visibility: hidden;
+	z-index: 10;
+}
+.menu li:hover > ul {
+	top: 100%;
+	visibility: visible;
+}
+.menu li li:hover > ul {
+	left: 100%;
+	top: 0;
+}
+.menu:after, .menu ul:after {
+	clear: both;
+	content: '.';
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+.menu, .menu ul {
+	min-height: 0;
+}
+.menu ul, .menu ul ul {
+	margin: 0;
+	padding: 0;
+}
+.menu ul li a:hover, .menu li li a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+.menu ul {
+	margin-top: 1px;
+	min-width: 15em;
+	width: auto;
+}
+.menu a {
+	border-left: 0px solid #ffffff;
+	color: #7F736E;
+	cursor: pointer;
+	display: block;
+	font-size: 23px;
+	font-weight: 300;
+	height: 45px;
+	line-height: 45px;
+	margin: 0;
+	padding: 0 0.5em;
+	position: relative;
+	text-decoration: none;
+	text-shadow: none;
+	white-space: nowrap;
+	text-transform: uppercase;
+}
+.menu a:hover {
+	background-color: #ffffff;
+	background-image: none;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+	background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+	background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+	background-image: -ms-linear-gradient(top, #ffffff, #ffffff);
+	background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+	background-image: linear-gradient(to top, #ffffff, #ffffff);
+	color: #7F736E;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#ffffff)";
+	border-bottom: 2px solid;
+}
+ul.menu > li:hover {
+	background-color: #ffffff;
+	color: #7F736E;
+}
+.menu .current_page_item a, .menu .current-menu-item a {
+	background-color: #ffffff;
+}
+.front-page .menu .current_page_item a {
+	background: none;
+	background-color: transparent;
+	background-image: none;
+	filter: none;
+}
+.menu li li {
+	background: #7F736E;
+	background-image: none;
+	border: 0px solid #7F736E;
+	color: #FFF;
+	filter: none;
+	margin: -1px 0 1px 0;
+	width: auto;
+}
+.menu li li a {
+	background: transparent !important;
+	border: none;
+	color: #FFF;
+	font-size: 23px;
+	font-weight: 400;
+	height: auto;
+	height: 20px;
+	line-height: 20px;
+	padding: 5px 10px;
+	text-shadow: none;
+	white-space: nowrap;
+}
+.menu li li a:hover {
+	background: none !important;
+	background-image: none;
+	border: none;
+	color: #FFF;
+	filter: none;
+}
+.menu li li:hover {
+	background: none !important;
+	filter: none;
+}
+.menu ul > li + li {
+	border-top: 0;
+}
+.menu li li:hover > ul {
+	left: 100%;
+	top: 0;
+}
+.menu > li:first-child > a {
+	border-left: none;
+}
+.menu a#responsive_menu_button {
+	display: none;
+}
+.main-nav #responsive_current_menu_item {
+	display: none;
+}
+/*.js .main-nav .menu {*/
+/*display: block;*/
+/*}*/
+
+/* =Primary Main Menu IE Fixes
+-------------------------------------------------------------- */
+.ie7 .menu ul {
+	background: none;
+}
+.ie7 .menu li li a {
+	min-width: 100%;
+}
+#wrapper {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	background-color: #ffffff;
+	border: 0px solid #ffffff;
+	border-radius: none;
+	clear: both;
+	margin: 20px auto 20px auto;
+	padding: 0 40px 20px 40px;
+	position: relative;
+}
+/***** Container *****/
+
+h1 {
+	font-size: 2.625em;
+	margin-bottom: .5em;
+	margin-top: .5em;
+}
+h1.entry-title.post-title {
+	text-align: center;
+	font-size: 2.75em;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 2.50em;
+	margin-bottom: .75em;
+	margin-top: .75em;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 2.0625em;
+	margin-bottom: .857em;
+	margin-top: .857em;
+}
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	font-weight: 300;
+	line-height: 1.0em;
+	word-wrap: break-word;
+}
+#footer {
+	margin: 30px auto;
+	max-width: 100%;
+	padding: 0px;
+	font-size: 1.25em;
+	line-height: 1.5em;
+}
+#footer-wrapper {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	background-color: #ffffff;
+	border: 0px solid #ffffff;
+	border-radius: none;
+	clear: both;
+	margin: 20px auto 20px auto;
+	padding: 0 40px 20px 40px;
+	position: relative;
+}
+.copyright {
+	text-align: left;
+	font-size: 1em;
+	font-weight: 300;
+}
