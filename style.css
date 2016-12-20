@@ -7,9 +7,9 @@ Author URI: http://www.edunow.com and http://www.designbydooley.com
 Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. Powerful but simple Theme Options for full CMS control with easy Logo Upload and Social Networking. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into over 45 languages. Cross-Browser compatible. Official support forum (http://cyberchimps.com/forum/free/responsive/). For Weekly Tips on how to get the most out of this theme, sign up here http://cyberchimps.com/weekly-tips-free-responsive-free-theme/
 Tags: white,black,gray,light,custom-menu,custom-header,custom-background,one-column,two-columns,left-sidebar,right-sidebar,theme-options,threaded-comments,full-width-template,sticky-post,translation-ready,rtl-language-support,responsive-layout,fluid-layout,featured-images
 Version: 1.1470726258
-Updated: 2016-12-02 07:04:18
+Updated: 2016-12-20 11:04:18
 
-BETA.COATESDESIGN.COM
+STAGE.COATESDESIGN.COM
 */
 
 body {
@@ -820,13 +820,6 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     clear: both;
 }
 
-.tagline, p.location, h4 {
-    font-size: 1.3em;
-    line-height: 1.2em;
-    margin: 0px 0 18px 0;
-    letter-spacing: 0;
-}
-
 /*Column Edits*/
 /*.col-60, .col-140, .col-220, .col-300, .col-380, .col-460, .col-540, .col-620, .col-700, .col-780, .col-860 {
     margin-right: 1.063829787264%;
@@ -840,6 +833,13 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 .col-860 {
     width: 94.489361702128%;
+}
+
+.tagline, p.location, h4 {
+    font-size: 1.3em;
+    line-height: 1.2em;
+    margin: 0px 0 18px 0;
+    letter-spacing: 0;
 }
 
 /*** Our Work Customizations ***/
