@@ -133,15 +133,6 @@ blockquote p {
     margin: auto;
 }
 
-.tagline, p.location {
-    font-size: 1.3em;
-    line-height: 1.2em;
-    margin: 0px 0 18px 0;
-    letter-spacing: 0;
-}
-
-
-
 body.page-id-184 h1.entry-title.post-title, body.page-id-193 h1.entry-title.post-title {
 display:none;
 }
@@ -844,6 +835,14 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     width: 94.489361702128%;
 }
 
+
+.tagline, p.location, h4 {
+    font-size: 1.3em;
+    line-height: 1.2em;
+    margin: 0px 0 18px 0;
+    letter-spacing: 0;
+}
+
 /*** Our Work Customizations ***/
 
 /* #work-civic-cultural{
@@ -1443,7 +1442,7 @@ ul.sub-menu {
 	padding: 0 17px 5px 17px;
 	}
 
-.post-22 .post-entry {
+.post-22 .post-entry, .post-24 .post-entry {
     margin: 0 auto;
     max-width: 366px;
 }
@@ -1464,7 +1463,7 @@ ul.sub-menu {
     min-width: 46%;
 }
 
-#content .relatedprojects .contain_project {
+#content .relatedprojects .contain_project, #content-our-work #list_of_projects .contain_project {
     float: left;
     margin: 0px 0px 13px 13px;
     min-width: 46%;
@@ -1577,7 +1576,7 @@ text-align: center;
     text-align: center;
 }
 
-#content .relatedprojects .contain_project {
+#content .relatedprojects .contain_project, #content-our-work #list_of_projects .contain_project {
     float: left;
     margin: 5px 5px 5px 5px;
     max-width: 100%;
