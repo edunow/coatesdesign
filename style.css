@@ -7,9 +7,9 @@ Author URI: http://www.edunow.com and http://www.designbydooley.com
 Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. Powerful but simple Theme Options for full CMS control with easy Logo Upload and Social Networking. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into over 45 languages. Cross-Browser compatible. Official support forum (http://cyberchimps.com/forum/free/responsive/). For Weekly Tips on how to get the most out of this theme, sign up here http://cyberchimps.com/weekly-tips-free-responsive-free-theme/
 Tags: white,black,gray,light,custom-menu,custom-header,custom-background,one-column,two-columns,left-sidebar,right-sidebar,theme-options,threaded-comments,full-width-template,sticky-post,translation-ready,rtl-language-support,responsive-layout,fluid-layout,featured-images
 Version: 1.1470726258
-Updated: 2017-12-14 21:18:18
+Updated: 2017-12-14 21:20:18
 
-WWW.COATESDESIGN.COM
+BETA.COATESDESIGN.COM
 */
 
 body {
@@ -170,7 +170,19 @@ ul.menu-widget {
     border-radius: 4px;
     margin: 100px 0 20px 0;
     padding: 0;
+	float: left; /*KD Sidebar fix */
 }
+body.press-template-default .widget-wrapper, body.studio-template-default .widget-wrapper {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 4px;
+    margin: 50px 0 0px 0;
+    padding: 0;
+    float:left; /*KD EDIT 091817*/
+}
+
 #widgets ul li a {
     display: inline;
     text-decoration: none;
@@ -375,8 +387,38 @@ body.single-press .tagline {
 ul.all-press-posts {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 35px 0;
 }
+
+.all-press-posts li.col-300 {
+    width: 30.914893617021%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.all-press-posts li {
+    background-color: #fff;
+	border: 1px solid #D3CDCA;
+    border-bottom: solid 8px #D3CDCA;
+    min-height: 400px;
+}
+
+.all-press-posts li .post-title {
+    padding: 0 5px 0 5px;
+}
+
+.all-press-posts li img.wp-post-image, .all-press-posts li img.attachment-full, .all-press-posts li img.attachment-large, .all-press-posts li img.attachment-medium, .all-press-posts li img.attachment-thumbnail {
+    margin: 0px auto;
+}
+
+.all-press-posts li a {
+    font-weight: 600;
+}
+
+.all-press-posts li p.post-title {
+    margin-bottom: 0px;
+}
+
 
 /*Our Team Customizations*/
 
@@ -1026,10 +1068,10 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   opacity: 0;
   padding: 5px 20px 0 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s;
-  -moz-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  transition: opacity .3s;
+  -o-transition: opacity .3s;
 }
 .view_project p{
   font-size: 14px;
@@ -1187,7 +1229,32 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 .post-count-container {
     clear: both;
-    text-align: right;
+    text-align: center;
+}
+
+/** Studio Blog **/
+
+.post-type-archive-studio h1 {
+    background-color: #AABE37;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 300;
+	font-size: 2em;
+    border-bottom: 6px solid #a7a92f;
+}
+body.post-type-archive-studio .widget-wrapper {
+    margin-top: 15px;
+}
+ul.topics-list {
+    list-style-type: none;
+}
+body.post-type-archive-studio img {
+    border: 1px solid #e5e3e3;
+}
+body.post-type-archive-studio .hentry {
+    border-bottom: 1px solid #e5e3e3;
+    margin-bottom: 35px;
 }
 
 /*** Media View Ports ****/
